@@ -145,7 +145,7 @@ app.put("/districts/:districtId", async (request, response) => {
   const updateDistrictQuery = `
     UPDATE district 
     SET district_name = '${districtName}',
-    state_id = ${stateId};
+    state_id = ${stateId},
     cases = ${cases},
     cured = ${cured},
     active = ${active},
